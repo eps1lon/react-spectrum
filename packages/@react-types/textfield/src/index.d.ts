@@ -47,7 +47,7 @@ export interface AriaTextFieldProps extends TextFieldProps, AriaLabelingProps, F
 
 export interface SpectrumTextFieldProps extends SpectrumTextInputBase, Omit<AriaTextFieldProps, 'isInvalid' | 'validationState'>, SpectrumFieldValidation<string>, SpectrumLabelableProps, StyleProps {
   /** An icon to display at the start of the input. */
-  icon?: ReactElement | null,
+  icon?: ReactElement<any> | null,
   /** Whether the input should be displayed with a quiet style. */
   isQuiet?: boolean
 }
