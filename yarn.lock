@@ -6311,11 +6311,6 @@
   resolved "https://registry.yarnpkg.com/@types/pretty-hrtime/-/pretty-hrtime-1.0.1.tgz#72a26101dc567b0d68fd956cf42314556e42d601"
   integrity sha512-VjID5MJb1eGKthz2qUerWT8+R4b9N+CHvGCzg9fn4kWZgaF9AhdYikQio3R7wV8YY1NsQKPaCwKz1Yff+aHNUQ==
 
-"@types/prop-types@*":
-  version "15.7.3"
-  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
-  integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
-
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
@@ -6326,19 +6321,18 @@
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.7.tgz#63bb7d067db107cc1e457c303bc25d511febf6cb"
   integrity sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==
 
-"@types/react-dom@^18.0.0":
-  version "18.2.4"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.4.tgz#13f25bfbf4e404d26f62ac6e406591451acba9e0"
-  integrity sha512-G2mHoTMTL4yoydITgOGwWdWMVd8sNgyEP85xVmMKAPUBwQWm9wBPQUmvbeF4V3WBY1P7mmL4BkjQ0SqUpf1snw==
+"@types/react-dom@^18.0.0", "@types/react-dom@npm:types-react-dom@19.0.0-alpha.2":
+  version "19.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/types-react-dom/-/types-react-dom-19.0.0-alpha.2.tgz#c58929f7a519fe91b91e57e9efd34396a1f7db9e"
+  integrity sha512-aGr3YLlqMnJAs1k2kOdlINCNNgGVNfIa/yIweQwF3o+iJpWLih0eF5wSzyxbaaYOu8QSEGze67bPDRKFsnnJOg==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@18.2.28", "@types/react@>=16", "@types/react@^18.2.28":
-  version "18.2.28"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.28.tgz#86877465c0fcf751659a36c769ecedfcfacee332"
-  integrity sha512-ad4aa/RaaJS3hyGz0BGegdnSRXQBkd1CCYDCdNjBPg90UUpLgo+WlJqb9fMYUxtehmzF3PJaTWqRZjko6BRzBg==
+"@types/react@*", "@types/react@>=16", "@types/react@npm:types-react@19.0.0-alpha.2":
+  version "19.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/types-react/-/types-react-19.0.0-alpha.2.tgz#dab2accd8062be23f22b56f5c853ab2d3b95c592"
+  integrity sha512-RQzbsByxCdbeJrhloYiVuXTQzcYDHN12gtTAY5gRfYxp5opnABDM6rbUZx/flJ6ams0vH3DSVVhVKoXQCJTN9Q==
   dependencies:
-    "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
