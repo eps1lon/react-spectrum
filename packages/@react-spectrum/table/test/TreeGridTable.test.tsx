@@ -306,7 +306,7 @@ describe('TableView with expandable rows', function () {
   });
 
   it('shouldn\'t render a child row if its parent isn\'t included in the expanded keys', function () {
-    let treegrid = render(<DynamicExpandableTable UNSTABLE_expandedKeys={['Lvl 2 Foo 1']} />);
+    let treegrid = render(DynamicExpandableTable({UNSTABLE_expandedKeys: ['Lvl 2 Foo 1']}, undefined));
     let rowgroups = treegrid.getAllByRole('rowgroup');
     let rows = within(rowgroups[1]).getAllByRole('row');
     expect(rows).toHaveLength(1);
