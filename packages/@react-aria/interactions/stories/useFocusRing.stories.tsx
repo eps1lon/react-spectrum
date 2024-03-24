@@ -125,6 +125,7 @@ const IframeWrapper = ({children}) => {
       if (iframeDocument) {
         iframeDocument.body.innerHTML = '';
         iframeDocument.body.appendChild(main);
+        // @ts-expect-error FIXME: `render()` was removed in React 19
         ReactDOM.render(children, main);
 
         return addWindowFocusTracking(iframeDocument.body);
