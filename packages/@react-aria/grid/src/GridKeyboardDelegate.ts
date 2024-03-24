@@ -19,7 +19,7 @@ import {RefObject} from 'react';
 export interface GridKeyboardDelegateOptions<T, C> {
   collection: C,
   disabledKeys: Set<Key>,
-  ref?: RefObject<HTMLElement>,
+  ref?: RefObject<HTMLElement | null>,
   direction: Direction,
   collator?: Intl.Collator,
   layout?: Layout<Node<T>>,
@@ -29,7 +29,7 @@ export interface GridKeyboardDelegateOptions<T, C> {
 export class GridKeyboardDelegate<T, C extends GridCollection<T>> implements KeyboardDelegate {
   collection: C;
   protected disabledKeys: Set<Key>;
-  protected ref: RefObject<HTMLElement>;
+  protected ref: RefObject<HTMLElement | null>;
   protected direction: Direction;
   protected collator: Intl.Collator;
   protected layout: Layout<Node<T>>;

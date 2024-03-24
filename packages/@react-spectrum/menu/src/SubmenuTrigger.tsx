@@ -15,7 +15,7 @@ import {Key} from '@react-types/shared';
 import {MenuContext, SubmenuTriggerContext, useMenuStateContext} from './context';
 import {mergeProps, useLayoutEffect} from '@react-aria/utils';
 import {Popover} from '@react-spectrum/overlays';
-import React, {ReactElement, useRef, useState} from 'react';
+import React, { ReactElement, useRef, useState, type JSX } from 'react';
 import ReactDOM from 'react-dom';
 import styles from '@adobe/spectrum-css-temp/components/menu/vars.css';
 import {UNSTABLE_useSubmenuTrigger} from '@react-aria/menu';
@@ -33,7 +33,7 @@ interface SubmenuTriggerProps {
 export interface SpectrumSubmenuTriggerProps extends Omit<SubmenuTriggerProps, 'targetKey'> {}
 
 function SubmenuTrigger(props: SubmenuTriggerProps) {
-  let triggerRef = useRef<HTMLDivElement>();
+  let triggerRef = useRef<HTMLDivElement>(undefined);
   let {
     children,
     targetKey

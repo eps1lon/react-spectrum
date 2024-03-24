@@ -121,7 +121,7 @@ export {_ListBox as ListBox};
 interface ListBoxInnerProps<T> {
   state: ListState<T>,
   props: ListBoxProps<T> & AriaListBoxOptions<T>,
-  listBoxRef: RefObject<HTMLDivElement>
+  listBoxRef: RefObject<HTMLDivElement | null>
 }
 
 function ListBoxInner<T>({state, props, listBoxRef}: ListBoxInnerProps<T>) {
@@ -491,13 +491,13 @@ function ListBoxtDropIndicator(props: ListBoxDropIndicatorProps, ref: ForwardedR
   });
 
   return (
-    <div
+    (<div
       {...dropIndicatorProps}
       {...renderProps}
       // eslint-disable-next-line
       role="option"
-      ref={ref as RefObject<HTMLDivElement>}
-      data-drop-target={isDropTarget || undefined} />
+      ref={ref as RefObject<HTMLDivElement | null>}
+      data-drop-target={isDropTarget || undefined} />)
   );
 }
 

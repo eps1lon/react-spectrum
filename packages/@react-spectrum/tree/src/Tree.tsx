@@ -36,7 +36,7 @@ export function Tree<T extends object>(props: CollectionBase<T> & Expandable & M
     })
   , []);
 
-  let ref = useRef();
+  let ref = useRef(undefined);
   let {collectionProps} = useSelectableCollection({
     ref,
     selectionManager: state.selectionManager,
@@ -89,7 +89,7 @@ function TreeItem<T>(props: TreeItemProps<T>) {
     // 'is-drop-target': isDropTarget
   });
 
-  let ref = useRef<HTMLDivElement>();
+  let ref = useRef<HTMLDivElement>(undefined);
   let {itemProps} = useSelectableItem({
     selectionManager: state.selectionManager,
     key: item.key,

@@ -35,7 +35,7 @@ export interface TreeGridListItemAria extends GridListItemAria {
  * @param state - State of the parent list, as returned by `useTreeState`.
  * @param ref - The ref attached to the row element.
  */
-export function useTreeGridListItem<T>(props: AriaTreeGridListItemOptions, state: TreeState<T>, ref: RefObject<FocusableElement>): TreeGridListItemAria {
+export function useTreeGridListItem<T>(props: AriaTreeGridListItemOptions, state: TreeState<T>, ref: RefObject<FocusableElement | null>): TreeGridListItemAria {
    // TODO: should it return a state specifically for isExpanded? Or is aria attribute sufficient?
   return useGridListItem(props, state, ref);
 }

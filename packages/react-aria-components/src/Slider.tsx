@@ -221,7 +221,7 @@ function SliderThumb(props: SliderThumbProps, ref: ForwardedRef<HTMLDivElement>)
   let {thumbProps, inputProps, labelProps, isDragging, isFocused, isDisabled} = useSliderThumb({
     ...props,
     index,
-    trackRef: trackRef as RefObject<HTMLDivElement>,
+    trackRef: trackRef as RefObject<HTMLDivElement | null>,
     inputRef,
     label
   }, state);

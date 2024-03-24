@@ -20,9 +20,9 @@ import {useSlider, useSliderThumb} from '@react-aria/slider';
 
 export interface AriaColorSliderOptions extends AriaColorSliderProps {
   /** A ref for the track element. */
-  trackRef: RefObject<Element>,
+  trackRef: RefObject<Element | null>,
   /** A ref for the input element. */
-  inputRef: RefObject<HTMLInputElement>
+  inputRef: RefObject<HTMLInputElement | null>
 }
 
 export interface ColorSliderAria {
